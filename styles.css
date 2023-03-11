@@ -26,7 +26,7 @@
     text-transform: capitalize;
     color: #282828;
     font-size: 17px;
-    font-family: Assistant;
+    font-family: 'Assistant', sans-serif;
     font-weight: 600;
     transition: all 0.5s;
 }
