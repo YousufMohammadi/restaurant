@@ -99,6 +99,7 @@
 .desc{
     color: #fff;
     font-size: 17px;
+    font-weight: 400;
     font-family: 'Poppins', sans-serif;
 }
 .btn{
@@ -111,6 +112,7 @@
     padding: 17px 45px;
     margin-top: 50px;
     border-radius: 40px;
+    transition: all 0.5s;
 }
 .btn:hover{
     color: #f40000;
