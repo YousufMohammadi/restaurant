@@ -7,11 +7,11 @@
 .header{
     width: 100%;
     height: 100px;
-    background-color: #fff;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: #fff;
 }
 .header-section{
     width: calc(100% / 3);
@@ -19,15 +19,15 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 }
 .header-section a{
     text-decoration: none;
     text-transform: capitalize;
     color: #282828;
     font-size: 17px;
-    font-family: 'Assistant', sans-serif;
     font-weight: 600;
+    font-family: 'Assistant', sans-serif;
     transition: all 0.5s;
 }
 .header-section a:hover{
@@ -118,4 +118,123 @@
     color: #f40000;
     background-color: #fff;
 }
-/* introduction finished  */
+/* introduction finished */
+/* meal section started */
+.meal-container{
+    width: 100%;
+    height: 500px;
+    background-color: #F8F8F8;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.meal{
+    width: 250px;
+    height: 250px;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #282828;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border-bottom: 6px solid transparent;
+    transition: all 0.3s;
+}
+.meal:hover{
+    border-bottom-color: #f40000;
+}
+.meal-name{
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Assistant', sans-serif;
+}
+/* meal section finished */
+/* offers section started */
+.offers{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    padding: 6%;
+}
+.offers-heading1{
+    color: #F40000;
+    font-family: "Kaushan Script", Sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+}
+.offers-heading2{
+    color: #282828;
+    font-family: "Assistant", Sans-serif;
+    font-size: 46px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 50px;
+}
+.discount-container{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.discount-card{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.offer-name{
+    color: #282828;
+    font-family: "Assistant", Sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.offer-description{
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+    color: #797979;
+    font-family: "Assistant", Sans-serif;
+    font-size: 17px;
+    background-color: #F8F8F8;
+    border-radius: 6px;
+}
+.off{
+    font-family: "Assistant", Sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.2em;
+    color: #fff;
+    background-color: #f40000;
+    word-wrap: break-word;
+    text-align: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* offers section finished */
