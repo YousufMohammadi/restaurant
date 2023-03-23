@@ -238,3 +238,77 @@
     align-items: center;
 }
 /* offers section finished */
+/* menu section started */
+.menu-container{
+    width: 100%;
+    min-height: 180vh;
+    background-image: url("images/menu-bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.menu-heading1{
+    color: #F40000;
+    font-family: "Kaushan Script", Sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+}
+.menu-heading2{
+    color: #fff;
+    font-family: "Assistant", Sans-serif;
+    font-size: 46px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 100px;
+}
+.menu{
+    width: 60%;
+    height: 130vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menu-content{
+    width: 80%;
+    height: 25%;
+    padding: 2%;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.food-content{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;   
+}
+.food-name{
+    margin-bottom: 12px;
+    color: #282828;
+    font-family: "Assistant", Sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+.food-description{
+    color: #797979;
+    font-family: "Assistant", Sans-serif;
+    font-size: 17px;
+}
+.food-cost{
+    color: #f40000;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Assistant", Sans-serif;
+    margin-top: 12px;
+}
+/* menu section finished */
