@@ -323,13 +323,13 @@
 }
 .news-heading1{
     color: #F40000;
-    font-family: "Kaushan Script", Sans-serif;
+    font-family: "Kaushan Script",sans-serif;
     font-size: 28px;
     font-weight: 400;
 }
 .news-heading2{
     color: #282828;
-    font-family: "Assistant", Sans-serif;
+    font-family: "Assistant",sans-serif;
     font-size: 46px;
     font-weight: bold;
     text-transform: capitalize;
@@ -342,7 +342,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
 }
 .news-content__left{
     width: 60%;
@@ -352,26 +351,12 @@
     justify-content: space-between;
     align-items: center;
 }
-.news-content__right{
-    width: 40%;
-    height: 100%;
-}
-.news-image__right{
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
 .news-left{
     width: 100%;
     height: 210px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-}
-.news-right{
-    width: 100%;
-    height: 100%;
-    position: relative;
 }
 .news-image{
     width: 40%;
@@ -381,6 +366,16 @@
 .news-image img{
     width: 100%;
     height: 100%;
+}
+.news1{
+    width: 55%;
+    height: 100%;
+    padding: 5%;
+    background-color: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
 }
 .news-date1{
     position: absolute;
@@ -395,8 +390,48 @@
     font-size: 26px;
     line-height: normal;
     text-transform: uppercase;
-    font-family: "Assistant", Sans-serif;
-    transform: translate(-50%, -50%);
+    font-family: "Assistant",sans-serif;
+    transform: translate(-50%,-50%);
+}
+.news-name{
+    margin-bottom: 12px;
+    color: #282828;
+    font-family: "Assistant",sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+.news-description{
+    color: #797979;
+    font-family: "Assistant",sans-serif;
+    font-size: 17px;
+}
+.read-more{
+    width: 80px;
+    color: #F40000;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Assistant",sans-serif;
+    margin-top: 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.5s;
+}
+.read-more:hover{
+    color: #282828;
+}
+.news-content__right{
+    width: 40%;
+    height: 100%;
+}
+.news-right{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.news-image__right{
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 .news-date2{
     position: absolute;
@@ -406,24 +441,14 @@
     color: #fff;
     width: 100px;
     height: 100px;
-    padding: 15px 20px;
+    padding: 15px 25px;
     text-align: center;
     font-size: 26px;
     line-height: normal;
     text-transform: uppercase;
-    font-family: "Assistant", Sans-serif;
-    transform: translate(-50%, -50%);
+    font-family: "Assistant",sans-serif;
+    transform: translate(-50%,-50%);
     z-index: 2;
-}
-.news1{
-    background-color: #F8F8F8;
-    padding: 5%;
-    width: 55%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
 }
 .news2{
     position: absolute;
@@ -442,30 +467,138 @@
 .news2 .news-name{
     margin-top: 80px;
 }
-.news-name{
-    margin-bottom: 12px;
-    color: #282828;
-    font-family: "Assistant", Sans-serif;
-    font-size: 24px;
-    font-weight: 600;
+/* news section finished */
+/* reservation section started */
+.reservation-container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("images/menu-bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
-.news-description{
-    color: #797979;
-    font-family: "Assistant", Sans-serif;
+.reservation-content{
+    width: 80%;
+    height:90vh ;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.time-container{
+    width: 35%;
+    height: 100%;
+    background-color: #F40000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.times{
+    width: 80%;
+    height: 80%;
+    border: 1px solid #bbb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.time-section{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.time{
+    color: #000;
+    font-family: "Kaushan Script",sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.open{
+    color: #F8F8F8;
+    font-family: "Assistant",sans-serif;
+    font-size: 46px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 80px;
+}
+.day{
+    color: #000;
+    text-transform: uppercase;
+    font-family: "Assistant",sans-serif;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.hour{
+    color: #F8F8F8;
+    font-family: "Assistant",sans-serif;
     font-size: 17px;
 }
-.read-more{
-    width: 80px;
-    color: #f40000;
-    font-size: 16px;
-    font-weight: 600;
-    font-family: "Assistant", Sans-serif;
-    margin-top: 10px;
-    text-decoration: none;
+.phone{
+    color: #fff;
+    font-family: "Assistant",sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.booking-container{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.booking-heading1{
+    color: #F40000;
+    font-family: "Kaushan Script",sans-serif;
+    font-size: 38px;
+    font-weight: 400;
     text-transform: capitalize;
-    transition: all 0.5s;
 }
-.read-more:hover{
-    color: #282828;
+.booking-heading2{
+    color: #000;
+    font-family: "Assistant",sans-serif;
+    font-size: 62px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 80px;
 }
-/* news section finished */
+.form-container{
+    width: 90%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+input{
+    width: calc(100% / 3 - 20px);
+    height: 30px;
+    padding:20px 0;
+    color: #797979;
+    border: none;
+    border-bottom: 1px solid #282828;
+}
+input::placeholder{
+    color: #797979;
+    font-size: 17px;
+}
+.btn2:hover{
+    border: 1px solid #F40000;
+}
+/* reservation section finished */
