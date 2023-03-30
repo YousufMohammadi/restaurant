@@ -586,7 +586,7 @@
     flex-wrap: wrap;
     gap: 30px;
 }
-input{
+.book-input{
     width: calc(100% / 3 - 20px);
     height: 30px;
     padding:20px 0;
@@ -594,11 +594,66 @@ input{
     border: none;
     border-bottom: 1px solid #282828;
 }
-input::placeholder{
+.book-input::placeholder{
     color: #797979;
     font-size: 17px;
 }
-.btn2:hover{
-    border: 1px solid #F40000;
-}
 /* reservation section finished */
+/* contact section started */
+.contact-container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-content {
+    width: 50%;
+    height: 100%;
+}
+.contact-heading{
+    color: #000;
+    font-family: "Assistant",sans-serif;
+    font-size: 62px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+.contact-content form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5px;
+}
+.contact-content label{
+    color: #282828;
+    font-size: 17px;
+    font-family: "Assistant",sans-serif;
+    text-transform: capitalize;
+    margin-bottom: 12px;
+}
+.contact-content sup{
+    color: #F40000;
+}
+.contact-input{
+    border: none;
+    border: 1px solid #ddd;
+    background-color: #eee;
+    padding: 20px 0;
+}
+.btn-send{
+    width: 110px;
+    height: 50px;
+    border: none;
+    background-color: #F40000;
+    color: #F8F8F8;
+    font-size: 18px;
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 12px;
+}
+/* contact section finished */

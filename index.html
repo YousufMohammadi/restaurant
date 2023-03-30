@@ -249,18 +249,38 @@
                 <span class="booking-heading1">reservation</span>
                 <span class="booking-heading2">online booking</span>
                 <div class="form-container">
-                    <input type="number" placeholder="Person">
-                    <input type="date">
-                    <input type="time" placeholder="Time">
-                    <input type="text" placeholder="Name">
-                    <input type="text" placeholder="Phone">
-                    <input type="email" placeholder="Email">
+                    <input type="number" class="book-input" placeholder="Person">
+                    <input type="date" class="book-input">
+                    <input type="time" class="book-input" placeholder="Time">
+                    <input type="text" class="book-input" placeholder="Name">
+                    <input type="text" class="book-input" placeholder="Phone">
+                    <input type="email" class="book-input" placeholder="Email">
                 </div>
-                <a href="#" class="btn btn2">book now</a>
+                <a href="#" class="btn">book now</a>
             </div>
         </div>
     </div>
     <!-- reservation section finished -->
+    <!-- contact section started -->
+    <div class="contact-container">
+        <div class="contact-content">
+            <div class="contact-heading">contact us</div>
+            <form action="#">
+                <label for="name">your name <sup>*</sup> </label>
+                <input class="contact-input" type="text" id="name">
+                <label for="email">your email <sup>*</sup> </label>
+                <input class="contact-input" type="text">
+                <label for="subject">your subject</label>
+                <input class="contact-input" type="text">
+                <label for="message">your message</label>
+                <textarea class="contact-input" name="message" id="message" cols="30" rows="10">
+
+                </textarea>    
+                <button class="btn-send">send</a>            
+            </form>
+        </div>
+    </div>
+    <!-- contact section finished -->
     
 </body>
 </html>
